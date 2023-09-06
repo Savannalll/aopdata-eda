@@ -1,0 +1,8 @@
+---
+title: "aopdata-eda"
+author: "Savanna"
+format: pdf
+editor: visual
+---
+
+git
