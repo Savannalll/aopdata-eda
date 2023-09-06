@@ -1,8 +1,27 @@
 ---
 title: "aopdata-eda"
 author: "Savanna"
-format: pdf
+format: 
+  html: 
+    embed-resources: true
 editor: visual
 ---
 
-git
+```{r}
+library(aopdata)
+library(tidyverse)
+```
+
+```{r}
+
+#Read data
+aop <- read_population(city = "brasilia") 
+
+
+#count of missing values 
+map_dbl(.x = aop, .f = ~sum(is.na(.x)))
+
+#proportion of missing values 
+map_dbl(.x = aop, .f = ~mean(is.na(.x)))
+
+```
